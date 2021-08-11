@@ -1,0 +1,462 @@
+@font-face {
+    font-family: "SegoeScript";
+    src: url('../fonts/SegoeScript.woff');
+    src: url('../fonts/SegoeScript.woff') format('embedded-opentype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "SegoeScript.woff";
+    box-sizing: border-box;
+}
+
+.cantainer {
+    width: 90vw;
+    margin: 0px auto;
+    background-color: rgb(255, 253, 251);
+}
+
+.header {
+    width: 100%;
+    height: 100vh;
+}
+
+nav {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    text-transform: uppercase;
+    justify-content: space-between;
+    padding: 0px 80px
+}
+
+
+/* .nav {
+    position: ;
+    background-color: rgba(255, 255, 255, 0.631);
+} */
+
+.nav {
+    position: fixed;
+    mask-position: right;
+    background-color: #fff;
+    box-shadow: 0px 1px 15px rgb(199, 149, 149);
+    z-index: 10;
+}
+
+.menu {
+    align-items: baseline;
+}
+
+.menulia {
+    min-height: 30px;
+}
+
+.menulia,
+.menuli {
+    overflow: hidden;
+    font-size: 12px;
+}
+
+.menu a {
+    text-decoration: none;
+    padding: 0px 20px;
+    color: rgb(75, 87, 70);
+}
+
+.menu .menulia::after {
+    content: '';
+    width: 0%;
+    height: 1.4px;
+    background: linear-gradient(90deg, rgba(95, 245, 57, 0.775), rgb(82, 232, 217));
+    display: block;
+    margin: auto;
+    transition: 1.3s;
+}
+
+.menu .menulia:hover::after {
+    width: 80%;
+    transition: 1s;
+    height: 4px;
+    margin: 4px 10px;
+    border-radius: 20px;
+}
+
+.menu .menulia:hover.menulia a {
+    color: rgb(115, 157, 157);
+}
+
+.katta {
+    font-size: 22px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: initial;
+}
+
+.icon {
+    position: fixed;
+    color: rgb(84, 83, 81);
+    top: 25px;
+    right: 10%;
+    transition: 00.5s;
+}
+
+.icon:hover {
+    transition: 0.5s;
+    color: rgb(226, 11, 11);
+}
+
+
+/* Rasimli */
+
+.rasimli {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 615px;
+    background-image: url("../IMAGE/photo-1594636797501-ef436e157819.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.matinlar h3 {
+    color: rgb(248, 242, 242);
+    font-weight: 500;
+}
+
+.boyalganmatin {
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 11px;
+    margin-top: 40px;
+    padding: 10px 0;
+    background-color: rgb(221, 183, 133);
+    transition: 0.5s;
+}
+
+.boyalganmatin:hover {
+    transform: scale(1.05);
+    border-radius: 5px solid RED;
+    background-color: rgb(155, 154, 153);
+}
+
+
+/* about style  */
+
+.about {
+    width: 100%;
+    height: 640px;
+    padding: 40px;
+    /* background-color: rgb(247, 247, 215); */
+    overflow: hidden;
+}
+
+.about_sarlavha {
+    text-align: center;
+}
+
+.about_items {
+    display: flex;
+    text-align: center;
+}
+
+.about_item {
+    margin: 30px 5px 5px 5px;
+    padding: 0px 10px;
+}
+
+.lampa {
+    width: 90px;
+    margin: 20px 0px;
+}
+
+.about_item h3 {
+    margin: 15px 0px;
+}
+
+.about_item {
+    font-size: 18px;
+}
+
+.about_item .rangli_p {
+    background-color: rgb(221, 183, 133);
+    margin: 15px 50px;
+    padding: 10px 30px;
+    color: #fff;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.about_item .rangli_p:hover {
+    transform: scale(1.05);
+    background: linear-gradient(45deg, rgb(226, 211, 127), rgb(163, 196, 163));
+    transition: 2s;
+}
+
+
+/* courses qismini style  */
+
+.courses {
+    width: 100%;
+    height: 620px;
+    display: flex;
+}
+
+.courses_ong {
+    width: 45%;
+    height: 100%;
+    background-image: url("../IMAGE/uyniki.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.courses_chap {
+    width: 55%;
+    height: 100%;
+    padding: 0px 70px;
+    background-color: rgb(247, 247, 215);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.chap_katta {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 60%;
+}
+
+.chap_rangli_p {
+    background-color: rgb(221, 183, 133);
+    margin: 18px 0px;
+    padding: 10px;
+    color: #fff;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.chap_rangli_p:hover {
+    transform: scale(1.05);
+    background: linear-gradient(90deg, rgb(171, 201, 171), rgb(161, 161, 104));
+}
+
+
+/* blog qismi */
+
+.blog {
+    width: 100%;
+    height: 630px;
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    text-align: center;
+}
+
+.blog_jamilar {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-between;
+}
+
+.blog_jami {
+    width: 23%;
+    position: relative;
+    overflow: hidden;
+    align-items: center;
+    align-items: center;
+    background-color: rgb(233, 232, 223);
+}
+
+.rang_j {
+    color: #fff;
+    background-color: rgb(157, 126, 90);
+}
+
+.rang_k {
+    color: #fff;
+    background-color: rgb(155, 154, 153);
+}
+
+.blog_jami h3,
+h5 {
+    margin: 14px 2px 0px 2px;
+}
+
+.blog_jami img {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 65%;
+    overflow: hidden;
+    transition: 1.5s;
+}
+
+.blog_jami img:hover {
+    transition: 1s;
+    overflow: hidden;
+    transform: scale(1.1);
+}
+
+.blog_btn button {
+    color: #fff;
+    background-color: rgb(155, 154, 153);
+    margin: 18px 0px;
+    padding: 10px;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    transition: 1.5s;
+}
+
+.blog_btn button:hover {
+    transition: 1s;
+    transform: scale(1.08);
+    background: linear-gradient(100deg, rgb(138, 173, 89), rgba(138, 160, 57, 0.871));
+}
+
+
+/* /blog qismi */
+
+
+/* SHOP QISMI */
+
+.shop {
+    width: 100%;
+    height: 620px;
+    display: flex;
+}
+
+.shop__chap {
+    width: 50%;
+    height: 100%;
+    background-image: url("../IMAGE/uyniki.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.shop_ong {
+    width: 50%;
+    height: 100%;
+    padding: 0px 70px;
+    background-color: rgb(233, 232, 223);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.ong__katta {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 70%;
+}
+
+.ong__katta p {
+    margin: 10px 0px;
+}
+
+#email {
+    padding: 10px;
+    width: 250px;
+    outline: none;
+    border: none;
+}
+
+.ong_btn {
+    background-color: rgb(216, 168, 101);
+    margin: 18px 0px;
+    padding: 10px;
+    color: #fff;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    transition: 1.5s;
+}
+
+.ong_btn:hover {
+    transition: 2s;
+    background: linear-gradient(90deg, rgb(118, 116, 83), rgb(163, 153, 109));
+}
+
+
+/* /SHOP QISMI */
+
+
+/* CONTACT QISMI */
+
+.contact {
+    width: 100%;
+    height: 300px;
+    background-color: rgb(143, 141, 131);
+    text-align: center;
+    padding: 70px;
+}
+
+.contact_items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px auto;
+    width: 50%;
+    height: 90%;
+    /* background-color: aqua; */
+}
+
+.contact_items h3 {
+    color: #fff;
+    font-size: 25px;
+}
+
+.contact_menu {
+    margin: 20px 0;
+    display: flex;
+}
+
+.contact_menu p {
+    color: #fff;
+    margin: 0 5px;
+}
+
+.icons i {
+    margin: 10px 5px;
+    color: #fff;
+    padding: 5px;
+    border-radius: 40%;
+    font-size: 20px;
+    transition: 1s ease;
+}
+
+.icons i:hover {
+    transition: 1s;
+    transform: scale(1.5);
+    color: rgba(255, 0, 0, 0.898);
+    background: linear-gradient(290deg, rgb(209, 194, 145), rgb(190, 226, 91));
+}
+
+.contact_p {
+    margin: 10px 0;
+    color: #fff;
+}
+
+
+/* /CONTACT QISMI */
