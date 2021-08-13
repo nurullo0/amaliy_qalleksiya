@@ -9,12 +9,15 @@
     padding: 0;
     font-family: "SegoeScript.woff";
     box-sizing: border-box;
+    color: #fff;
 }
-
+body{
+    background-color: rgba(97, 93, 93, 0.842);
+}
 .cantainer {
     width: 90vw;
     margin: 0px auto;
-    background-color: rgb(255, 253, 251);
+    background-color: rgb(73, 71, 69);
 }
 
 .header {
@@ -123,7 +126,7 @@ nav ul {
     align-items: center;
     width: 100%;
     height: 615px;
-    background-image: url("../IMAGE/photo-1594636797501-ef436e157819.jpg");
+    background-image: url("../IMAGE/rasim.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -216,7 +219,7 @@ nav ul {
 .courses_ong {
     width: 45%;
     height: 100%;
-    background-image: url("../IMAGE/uyniki.jpg");
+    background-image: url("../IMAGE/rasim1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -292,7 +295,7 @@ nav ul {
 
 .rang_k {
     color: #fff;
-    background-color: rgb(155, 154, 153);
+    background-color: rgb(77, 74, 72);
 }
 
 .blog_jami h3,
@@ -305,7 +308,7 @@ h5 {
     left: 0;
     bottom: 0;
     width: 100%;
-    height: 65%;
+    height: 50%;
     overflow: hidden;
     transition: 1.5s;
 }
@@ -348,7 +351,7 @@ h5 {
 .shop__chap {
     width: 50%;
     height: 100%;
-    background-image: url("../IMAGE/uyniki.jpg");
+    background-image: url("../IMAGE/rasimli5.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -357,7 +360,7 @@ h5 {
     width: 50%;
     height: 100%;
     padding: 0px 70px;
-    background-color: rgb(233, 232, 223);
+    background-color: rgb(41, 40, 36);
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -383,19 +386,20 @@ h5 {
 }
 
 .ong_btn {
-    background-color: rgb(216, 168, 101);
+    background-color: rgb(129, 125, 119);
     margin: 18px 0px;
     padding: 10px;
     color: #fff;
     text-transform: uppercase;
     border: none;
     cursor: pointer;
-    transition: 1.5s;
+    transition: 1s;
 }
 
 .ong_btn:hover {
-    transition: 2s;
-    background: linear-gradient(90deg, rgb(118, 116, 83), rgb(163, 153, 109));
+    transition: 1.5s;
+    transform: scale(1.08);
+    background: linear-gradient(90deg, rgb(107, 106, 85), rgb(143, 137, 110));
 }
 
 
@@ -407,7 +411,7 @@ h5 {
 .contact {
     width: 100%;
     height: 300px;
-    background-color: rgb(143, 141, 131);
+    background-color: rgb(119, 118, 111);
     text-align: center;
     padding: 70px;
 }
