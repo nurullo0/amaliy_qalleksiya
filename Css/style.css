@@ -12,12 +12,12 @@
     color: #fff;
 }
 body{
-    background-color: rgba(97, 93, 93, 0.842);
+    background: linear-gradient(90deg,rgb(49, 95, 105), rgb(44, 65, 44));
 }
 .cantainer {
     width: 90vw;
     margin: 0px auto;
-    background-color: rgb(73, 71, 69);
+    /* background-color: rgb(73, 71, 69); */
 }
 
 .header {
@@ -50,8 +50,8 @@ nav ul {
 .nav {
     position: fixed;
     mask-position: right;
-    background-color: #fff;
-    box-shadow: 0px 1px 15px rgb(199, 149, 149);
+    background-color: rgba(181, 208, 223, 0.604);
+    
     z-index: 10;
 }
 
@@ -72,14 +72,14 @@ nav ul {
 .menu a {
     text-decoration: none;
     padding: 0px 20px;
-    color: rgb(75, 87, 70);
+    color: #fff
 }
 
 .menu .menulia::after {
     content: '';
     width: 0%;
     height: 1.4px;
-    background: linear-gradient(90deg, rgba(95, 245, 57, 0.775), rgb(82, 232, 217));
+    background: linear-gradient(90deg, rgba(144, 189, 133, 0.775), rgb(100, 179, 171));
     display: block;
     margin: auto;
     transition: 1.3s;
@@ -94,7 +94,8 @@ nav ul {
 }
 
 .menu .menulia:hover.menulia a {
-    color: rgb(115, 157, 157);
+    transition: 2s;
+    color: rgb(7, 19, 187);
 }
 
 .katta {
@@ -105,18 +106,18 @@ nav ul {
 
 .icon {
     position: fixed;
-    color: rgb(84, 83, 81);
     top: 25px;
     right: 10%;
-    transition: 00.5s;
+    z-index: 60;
 }
-
-.icon:hover {
-    transition: 0.5s;
-    color: rgb(226, 11, 11);
+.icon i {
+    color: rgba(4, 0, 255, 0.645);
+    transition: 1s;
 }
-
-
+.icon i:hover {
+    transition: 1s;
+    color: rgb(25, 243, 6);
+}
 /* Rasimli */
 
 .rasimli {
@@ -125,14 +126,14 @@ nav ul {
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 615px;
-    background-image: url("../IMAGE/rasim.jpg");
+    height: 100vh;
+    background: url("../IMAGE/glavniga.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .matinlar h3 {
-    color: rgb(248, 242, 242);
+    color: #fff;
     font-weight: 500;
 }
 
@@ -142,14 +143,14 @@ nav ul {
     font-size: 11px;
     margin-top: 40px;
     padding: 10px 0;
-    background-color: rgb(221, 183, 133);
+    background-color: rgba(0, 203, 253, 0.611);
     transition: 0.5s;
 }
 
 .boyalganmatin:hover {
-    transform: scale(1.05);
+    transform: scale(1.02);
     border-radius: 5px solid RED;
-    background-color: rgb(155, 154, 153);
+    background-color: rgba(182, 179, 176, 0.672);
 }
 
 
@@ -191,20 +192,24 @@ nav ul {
 }
 
 .about_item .rangli_p {
-    background-color: rgb(221, 183, 133);
+    background-color: rgba(221, 183, 133, 0.123);
+    border-radius: 10px;
+    border: 1px solid rgba(0, 255, 55, 0.707);
     margin: 15px 50px;
     padding: 10px 30px;
     color: #fff;
     text-transform: uppercase;
-    border: none;
+    /* border: none; */
     cursor: pointer;
     transition: 1s;
 }
 
 .about_item .rangli_p:hover {
-    transform: scale(1.05);
-    background: linear-gradient(45deg, rgb(226, 211, 127), rgb(163, 196, 163));
-    transition: 2s;
+    box-shadow: 0px 0px 20px rgba(71, 202, 200, 0.788);
+    border-radius: 10px;
+    border: 1px solid rgba(71, 202, 200, 0.788);
+    background: linear-gradient(190deg, rgba(0, 255, 115, 0.24) , rgba(0, 166, 255, 0.24)); 
+    transition: 1.5s;
 }
 
 
@@ -222,13 +227,14 @@ nav ul {
     background-image: url("../IMAGE/rasim1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    border-radius: 78% 43% 95% 35% / 93% 56% 45% 28%  ;
 }
 
 .courses_chap {
     width: 55%;
     height: 100%;
     padding: 0px 70px;
-    background-color: rgb(247, 247, 215);
+    background-color: rgba(83, 114, 100, 0.542);
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -243,7 +249,7 @@ nav ul {
 }
 
 .chap_rangli_p {
-    background-color: rgb(221, 183, 133);
+    background-color: rgba(21, 137, 214, 0.404);
     margin: 18px 0px;
     padding: 10px;
     color: #fff;
@@ -255,7 +261,7 @@ nav ul {
 
 .chap_rangli_p:hover {
     transform: scale(1.05);
-    background: linear-gradient(90deg, rgb(171, 201, 171), rgb(161, 161, 104));
+    background: linear-gradient(90deg, rgba(79, 119, 79, 0.426), rgba(25, 71, 88, 0.514));
 }
 
 
@@ -285,17 +291,21 @@ nav ul {
     overflow: hidden;
     align-items: center;
     align-items: center;
-    background-color: rgb(233, 232, 223);
+    background-color: rgba(33, 150, 228, 0.521);
 }
 
 .rang_j {
     color: #fff;
-    background-color: rgb(157, 126, 90);
+    background-color: rgba(58, 102, 184, 0.486);
 }
+.rang_a {
+    background-color: rgba(136, 156, 223, 0.486);
+}
+
 
 .rang_k {
     color: #fff;
-    background-color: rgb(77, 74, 72);
+    background-color: rgba(98, 53, 143, 0.645);
 }
 
 .blog_jami h3,
@@ -321,7 +331,7 @@ h5 {
 
 .blog_btn button {
     color: #fff;
-    background-color: rgb(155, 154, 153);
+    background-color: rgba(121, 114, 108, 0.474);
     margin: 18px 0px;
     padding: 10px;
     text-transform: uppercase;
@@ -331,9 +341,8 @@ h5 {
 }
 
 .blog_btn button:hover {
-    transition: 1s;
-    transform: scale(1.08);
-    background: linear-gradient(100deg, rgb(138, 173, 89), rgba(138, 160, 57, 0.871));
+    transition: 1s ease;
+    background: linear-gradient(100deg, rgba(76, 141, 143, 0.255), rgba(59, 77, 119, 0.624));
 }
 
 
@@ -352,15 +361,17 @@ h5 {
     width: 50%;
     height: 100%;
     background-image: url("../IMAGE/rasimli5.jpg");
-    background-repeat: no-repeat;
+    background-repeat:no-repeat;
+    background-position: center;
     background-size: cover;
+    border-radius: 100% 56% 100% 72% / 78% 95% 79% 85%  ;
 }
 
 .shop_ong {
     width: 50%;
     height: 100%;
     padding: 0px 70px;
-    background-color: rgb(41, 40, 36);
+    background-color: rgba(41, 40, 36, 0.534);
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -386,7 +397,7 @@ h5 {
 }
 
 .ong_btn {
-    background-color: rgb(129, 125, 119);
+    background-color: rgba(129, 125, 119, 0.515);
     margin: 18px 0px;
     padding: 10px;
     color: #fff;
@@ -397,9 +408,9 @@ h5 {
 }
 
 .ong_btn:hover {
-    transition: 1.5s;
-    transform: scale(1.08);
-    background: linear-gradient(90deg, rgb(107, 106, 85), rgb(143, 137, 110));
+    transition: 1s;
+    transform:translate(10px);
+    background: linear-gradient(90deg, rgba(107, 106, 85, 0.679), rgba(158, 149, 111, 0.597));
 }
 
 
@@ -411,7 +422,7 @@ h5 {
 .contact {
     width: 100%;
     height: 300px;
-    background-color: rgb(119, 118, 111);
+    background-color: rgba(119, 118, 111, 0.426);
     text-align: center;
     padding: 70px;
 }
