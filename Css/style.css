@@ -17,7 +17,6 @@ body{
 .cantainer {
     width: 90vw;
     margin: 0px auto;
-    /* background-color: rgb(73, 71, 69); */
 }
 
 .header {
@@ -40,12 +39,6 @@ nav ul {
     justify-content: space-between;
     padding: 0px 80px
 }
-
-
-/* .nav {
-    position: ;
-    background-color: rgba(255, 255, 255, 0.631);
-} */
 
 .nav {
     position: fixed;
@@ -78,18 +71,18 @@ nav ul {
 .menu .menulia::after {
     content: '';
     width: 0%;
-    height: 1.4px;
-    background: linear-gradient(90deg, rgba(144, 189, 133, 0.775), rgb(100, 179, 171));
+    height: 1px;
+    background: yellow;
     display: block;
     margin: auto;
-    transition: 1.3s;
+    transition: 1.5s;
 }
 
 .menu .menulia:hover::after {
     width: 80%;
     transition: 1s;
-    height: 4px;
-    margin: 4px 10px;
+    height: 3px;
+    margin: 0px auto;
     border-radius: 20px;
 }
 
@@ -111,12 +104,12 @@ nav ul {
     z-index: 60;
 }
 .icon i {
-    color: rgba(4, 0, 255, 0.645);
+    color: rgba(0, 153, 255, 0.837);
     transition: 1s;
 }
 .icon i:hover {
     transition: 1s;
-    color: rgb(25, 243, 6);
+    color: rgb(12, 247, 126);
 }
 /* Rasimli */
 
@@ -143,14 +136,18 @@ nav ul {
     font-size: 11px;
     margin-top: 40px;
     padding: 10px 0;
-    background-color: rgba(0, 203, 253, 0.611);
-    transition: 0.5s;
+    background-color: rgba(1, 115, 143, 0.686);
+    border: 1px solid rgba(0, 203, 253, 0.611);
+    border-radius: 0px 60px 0px 60px;
+    transition: 1.5s;
 }
 
 .boyalganmatin:hover {
-    transform: scale(1.02);
-    border-radius: 5px solid RED;
-    background-color: rgba(182, 179, 176, 0.672);
+    box-shadow: 0px 0px 20px rgba(71, 202, 200, 0.788);
+    border-radius: 60px 0px 60px 0px;
+    border: 1px solid rgba(71, 202, 200, 0.788);
+    background: linear-gradient(190deg, rgba(0, 255, 115, 0.24) , rgba(0, 166, 255, 0.24)); 
+    transition: 1s;
 }
 
 
@@ -160,7 +157,6 @@ nav ul {
     width: 100%;
     height: 640px;
     padding: 40px;
-    /* background-color: rgb(247, 247, 215); */
     overflow: hidden;
 }
 
@@ -192,14 +188,13 @@ nav ul {
 }
 
 .about_item .rangli_p {
-    background-color: rgba(221, 183, 133, 0.123);
     border-radius: 10px;
     border: 1px solid rgba(0, 255, 55, 0.707);
     margin: 15px 50px;
     padding: 10px 30px;
     color: #fff;
+    background-color: rgba(21, 137, 214, 0.404);
     text-transform: uppercase;
-    /* border: none; */
     cursor: pointer;
     transition: 1s;
 }
@@ -211,9 +206,6 @@ nav ul {
     background: linear-gradient(190deg, rgba(0, 255, 115, 0.24) , rgba(0, 166, 255, 0.24)); 
     transition: 1.5s;
 }
-
-
-/* courses qismini style  */
 
 .courses {
     width: 100%;
@@ -249,19 +241,23 @@ nav ul {
 }
 
 .chap_rangli_p {
-    background-color: rgba(21, 137, 214, 0.404);
     margin: 18px 0px;
     padding: 10px;
+    background-color: rgba(21, 137, 214, 0.404);
     color: #fff;
     text-transform: uppercase;
-    border: none;
+    border-radius: 10px;
+    border: 1px solid rgba(100, 247, 132, 0.707);
     cursor: pointer;
     transition: 1s;
 }
 
 .chap_rangli_p:hover {
-    transform: scale(1.05);
-    background: linear-gradient(90deg, rgba(79, 119, 79, 0.426), rgba(25, 71, 88, 0.514));
+    box-shadow: 0px 0px 20px rgba(71, 202, 200, 0.788);
+    border-radius: 10px;
+    border: 1px solid rgba(71, 202, 200, 0.788);
+    background: linear-gradient(190deg, rgba(0, 255, 115, 0.24) , rgba(0, 166, 255, 0.24)); 
+    transition: 1.5s;
 }
 
 
@@ -290,7 +286,7 @@ nav ul {
     position: relative;
     overflow: hidden;
     align-items: center;
-    align-items: center;
+    border-radius: 20% 20% 2% 10% / 30% 30% 10% 2%;
     background-color: rgba(33, 150, 228, 0.521);
 }
 
@@ -330,19 +326,23 @@ h5 {
 }
 
 .blog_btn button {
-    color: #fff;
-    background-color: rgba(121, 114, 108, 0.474);
     margin: 18px 0px;
     padding: 10px;
+    color: #fff;
+    background-color: rgba(21, 137, 214, 0.404);
     text-transform: uppercase;
-    border: none;
+    border-radius: 10px;
+    border: 1px solid rgba(100, 247, 132, 0.707);
     cursor: pointer;
     transition: 1.5s;
 }
 
 .blog_btn button:hover {
-    transition: 1s ease;
-    background: linear-gradient(100deg, rgba(76, 141, 143, 0.255), rgba(59, 77, 119, 0.624));
+    box-shadow: 0px 0px 20px rgba(71, 202, 200, 0.788);
+    border-radius: 10px;
+    border: 1px solid rgba(71, 202, 200, 0.788);
+    background: linear-gradient(190deg, rgba(0, 255, 115, 0.24) , rgba(0, 166, 255, 0.24)); 
+    transition: 1.5s;
 }
 
 
@@ -393,24 +393,29 @@ h5 {
     padding: 10px;
     width: 250px;
     outline: none;
-    border: none;
+    border: 1px solid white;
 }
 
 .ong_btn {
-    background-color: rgba(129, 125, 119, 0.515);
     margin: 18px 0px;
     padding: 10px;
     color: #fff;
+    background-color: rgba(21, 137, 214, 0.404);
     text-transform: uppercase;
-    border: none;
+    border: 1px solid rgba(129, 125, 119, 0.515);
     cursor: pointer;
     transition: 1s;
 }
 
 .ong_btn:hover {
-    transition: 1s;
+    transition: 1s steps(0.5s);
     transform:translate(10px);
-    background: linear-gradient(90deg, rgba(107, 106, 85, 0.679), rgba(158, 149, 111, 0.597));
+
+    box-shadow: 0px 0px 20px rgba(71, 202, 200, 0.788);
+    border-radius: 10px;
+    border: 1px solid rgba(71, 202, 200, 0.788);
+    background: linear-gradient(190deg, rgba(0, 255, 115, 0.24) , rgba(0, 166, 255, 0.24)); 
+    
 }
 
 
@@ -434,8 +439,7 @@ h5 {
     margin: 0px auto;
     width: 50%;
     height: 90%;
-    /* background-color: aqua; */
-}
+ }
 
 .contact_items h3 {
     color: #fff;
@@ -461,17 +465,41 @@ h5 {
     transition: 1s ease;
 }
 
-.icons i:hover {
+.telegram:hover {
+    transition: 1s;
+    transform: scale(1.5);
+    color: rgba(5, 172, 223, 0.974);
+    background: linear-gradient(290deg, rgb(145, 197, 209), rgb(197, 209, 197)); 
+}
+
+.instagram:hover{
+    transition: 1s;
+    transform: scale(1.5);
+    color: rgba(255, 132, 0, 0.898);
+    background: linear-gradient(290deg, rgb(145, 197, 209), rgb(166, 194, 166));
+}
+
+.youtube:hover {
     transition: 1s;
     transform: scale(1.5);
     color: rgba(255, 0, 0, 0.898);
     background: linear-gradient(290deg, rgb(209, 194, 145), rgb(190, 226, 91));
+}
+.facebook:hover {
+    transition: 1s;
+    transform: scale(1.5);
+    color: rgba(0, 72, 255, 0.987);
+    background: linear-gradient(290deg, rgb(145, 209, 156), rgb(211, 214, 203));
+}
+.reddit:hover {
+    transition: 1s;
+    transform: scale(1.5);
+    color: rgba(255, 166, 0, 0.987);
+    background: linear-gradient(290deg, rgb(201, 221, 224), rgb(224, 243, 209));
 }
 
 .contact_p {
     margin: 10px 0;
     color: #fff;
 }
-
-
 /* /CONTACT QISMI */
